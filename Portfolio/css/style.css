@@ -1,0 +1,195 @@
+/* css variables */
+@import url(./partials/_variables.css);
+
+/* fonts from fonts file */
+@import url(./fonts.css);
+
+/*global styling*/
+@import url(./partials/_global.css);
+
+/* nav start */
+.header .menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+.header .menu .navbar{
+    background-image: linear-gradient(to top, #e2ebf0 0%, #cfd9df 100%);
+    padding: 1rem 3rem;
+}
+.header .menu .nav-item .nav-link{
+    font-family: var(--Montserrat);
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 1.7rem;
+    color:black;
+}
+
+.header .menu .navbar .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header .menu .navbar a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* nav end */
+
+/* banner area start */
+.site-main .site-banner{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-blend-mode: screen;
+    background-repeat: repeat;
+    background-position:0% 50%;
+}
+
+.site-main .site-banner .site-title h1{
+    padding-top: 25%;
+    font-weight: 500%;
+}
+.site-main .site-banner .site-title h2{
+    padding-top: 5%;
+    font-weight: 500%;
+    font: normal 30px/ 30px var(--Montserrat);
+}
+
+.site-main .site-banner .site-title h3{
+    font: normal 30px/ 30px var(--Montserrat);
+}
+
+/* banner area end */
+
+/*start about area*/
+
+.site-main .about-area{
+    padding: 2rem 11rem;
+    background-image: linear-gradient(to top, #e2ebf0 0%, #cfd9df 100%);
+    background-blend-mode: screen;
+    background-repeat: repeat;
+    background: position 0;% 50%;
+    
+}
+
+.site-main .about-area h2{
+    font-size: 40px;
+}
+/*end about area*/
+
+/*start project area*/
+.project-area h1{
+    font-size: 40px;  
+}
+
+.video-1{
+    width:100%;
+}
+
+.site-main .project-area .button-group button{
+    border: none;
+    font: normal 500 16px/130px var(--Montserrat));
+    
+}
+
+.site-main .project-area {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: var(--Montserrat));    
+}
+
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.0) drop-shadow(1px 8px 30px #dbd5d5);
+}
+
+/* vid */
+/**
+ * Simple fade transition,
+ */
+ .mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+/*end project area*/
+
+/*social media */
+
+.social-container {
+  width: 460px;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 5;
+  list-style: none;
+  margin: 1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 1.5em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #000000, #c3d5ff);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #060a0c;
+  background: -webkit-linear-gradient(45deg, #090b0c, #c3d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
